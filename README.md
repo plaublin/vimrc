@@ -16,6 +16,6 @@ This is my vimrc
 
 	1. Clone the repository
 	2. Launch vim and execute `:PlugInstall`
-	3. Install `python-dev` and `python3-dev` in order to compile YouCompleteMe
-	4. Go to `.vim/plugged/YouCompleteMe` and execute `./install.sh --clang-completer`
+	3. Install `cmake`, `python-dev` and `python3-dev` in order to compile YouCompleteMe
+	4. Go to `.vim/plugged/YouCompleteMe` and execute `./install.py --clang-completer`
 	5. Install `exuberant-ctags`, e.g., `sudo aptitude install exuberant-ctags`

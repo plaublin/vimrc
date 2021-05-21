@@ -79,7 +79,11 @@ else
 endif
 
 " vim-plug
-call plug#begin('~/.vim/plugged')
+if has('nvim')
+	call plug#begin('~/.config/nvim/plugged')
+else
+	call plug#begin('~/.vim/plugged')
+endif
 
 " alternate files in vim quickly (.c -> .h etc); :help alternate
 Plug 'https://github.com/vim-scripts/a.vim'
@@ -108,8 +112,6 @@ let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 " close the preview window after leaving insert mode
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_confirm_extra_conf = 0
-
-
 
 " tagbar
 nmap <F8> :TagbarToggle<CR>
